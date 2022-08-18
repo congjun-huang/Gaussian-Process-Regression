@@ -106,7 +106,7 @@ meets the following requirements:
 -   The maximum likelihood estimate should be made using an appropriate
     optimizer
 
-    -   In order to make the process simpler - you may treat
+    -   In order to make the process simpler - I may treat
         ![\\sigma^2_n](https://latex.codecogs.com/svg.latex?%5Csigma%5E2_n "\sigma^2_n")
         as fixed with a value of 0.1 (which is the true value for all
         three data sets).
@@ -114,21 +114,17 @@ meets the following requirements:
         likelihood in terms of
         ![l](https://latex.codecogs.com/svg.latex?l "l") and
         ![\\sigma^2_s](https://latex.codecogs.com/svg.latex?%5Csigma%5E2_s "\sigma^2_s"),
-        so choose an optimization method that does not require the
+        so I will choose an optimization method that does not require the
         gradient.
     -   All parameters must be
         ![\\geq 0](https://latex.codecogs.com/svg.latex?%5Cgeq%200 "\geq 0")
         to produce a valid covariance, construct an appropriate
         `Bounds()` object to aid in the optimization.
     -   Optimization methods may fail based on the initial guess
-        provided - as such you should initialize at multiple starting
+        provided - as such I will initialize at multiple starting
         points and only keep results which succeed
-        -   If all optimization attempts fail then raise a
-            `RuntimeError`.
-        -   Feel free to ignore any warnings that are produced by the
-            optimizer (so long as at least one attempt succeeds)
-
--   Write a function named `fit()` which takes the following arguments:
+        
+-   I will write a function named `fit()` which takes the following arguments:
 
     -   `d` - data set to fit (pandas data frame with `x` and `y`
         columns)
