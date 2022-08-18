@@ -269,5 +269,5 @@ which would then be overlayed as a scatter plot.
     -   `d` - either `None` or a data frame with data observations
 -   My function does not return anything, but displays a
     pyplot figure with all of the above features.
--   I will include a brief write up describing your function and implementation
+-   I will include a brief write up describing the function and implementation
     approach.
