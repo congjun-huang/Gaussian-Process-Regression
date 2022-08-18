@@ -218,7 +218,7 @@ Now I will implement a python function which
 calculates the mean and covariance of conditional distribution described
 above and meets the following requirements:
 
--   Write a function named `predict()` which takes the following
+-   I will write a function named `predict()` which takes the following
     arguments:
 
     -   `d` - data set that was fit (must match the data frame used to
@@ -237,7 +237,7 @@ above and meets the following requirements:
 -   My function will return a pandas data frame with 1+`n_draws`
     columns: one `x` column (`x_p`) and `n_draws` `y` columns,
 
-    -   Draws can be made via the `multivariate_normal()` method of your
+    -   Draws can be made via the `multivariate_normal()` method of the
         `numpy.random.default_rng()` instance or via a cholesky
         decomposition with unit normal draws.
     -   Generate samples as efficiently as possible (avoid repeated
